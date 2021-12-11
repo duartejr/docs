@@ -1,0 +1,61 @@
+.sidebar {
+  background: rgb(5, 68, 104);
+  width: 225px;
+  margin: 0px;
+}
+
+.content {
+  margin: 25px;
+}
+
+.profile {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.profile h3{
+  color: #ffffff;
+  margin: 10px 0 5px;
+}
+
+.profile p{
+  color: rgb(206, 240, 253);
+  font-size: 14px;
+}
+
+.sidebar header nav ul li {
+  list-style: none;
+}
+
+.sidebar header nav ul li a{
+  display: block;
+	padding: 5px 5px;
+	border-bottom: 1px solid #10558d;
+	color: rgb(241, 237, 237);
+	font-size: 14px;
+	position: relative;
+  text-decoration: none;
+}
+
+.sidebar header nav ul li a .icon{
+	color: #dee4ec;
+	width: 40px;
+	display: inline-block;
+}
+
+.sidebar header nav ul li a:hover,
+.sidebar header nav ul li a.active{
+  color: #0c7db1;
+  background:white;
+  border-right: 2px solid rgb(5, 68, 104);
+}
+
+.sidebar header nav ul li a:hover:before,
+.sidebar header nav ul li a.active:before{
+  display: block;
+}
+
+
+.content p {
+  text-align: justify;
+}
