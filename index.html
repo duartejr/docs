@@ -31,28 +31,11 @@
                                     <li><a href="#save_data"><code>save_data</code></a></li>
                                 </ul>
                             </li>
-                            <li><a href="">Home</a></li>
-                            <li><a href="#">PyHidroweb</a>
-                                <li><a href="">Home</a></li>
-                            <li><a href="#">PyHidroweb</a>
-                                <li><a href="">Home</a></li>
-                            <li><a href="#">PyHidroweb</a>
-                                <li><a href="">Home</a></li>
-                            <li><a href="#">PyHidroweb</a>
-                                <li><a href="">Home</a></li>
-                            <li><a href="#">PyHidroweb</a>
-                                <li><a href="">Home</a></li>
-                            <li><a href="#">PyHidroweb</a>
-                                <li><a href="">Home</a></li>
-                            <li><a href="#">PyHidroweb</a>
-                                <li><a href="">Home</a></li>
-                            <li><a href="#">PyHidroweb</a>
-                                <li><a href="">Home</a></li>
-                            <li><a href="#">PyHidroweb</a>
-                                <li><a href="">Home</a></li>
-                            <li><a href="#">PyHidroweb</a>
-                                <li><a href="">Home</a></li>
-                            <li><a href="#">PyHidroweb</a>
+                            <li>
+                                <a href="#read_n.pyc">read_nc.py</a>
+                                <ul>
+                                    <li><a href="#read_nc">read_nc</a></li>
+                                </ul>
                             </li>
                         </ul>
                     </nav>
@@ -130,6 +113,35 @@
                             </ul>
                         </ul>
                     </section>
+                    <section id="read_nc.py">
+                        <h2>read_nc.py</h2>
+                        <p>The <a href="https://github.com/duartejr/pyutils/blob/master/read_nc.py">read_nc.py</a> has a group os functions to manipulate 
+                            netCDF files. </p>
+                        <h4>Requirements:</h4>
+                        <ul>
+                            <li>netCDF4</li>
+                            <li>numpy</li>
+                            <li>geopandas</li>
+                        </ul>
+                        <p><code>read_nc(file, shape=None, var_name='pre', freq='month', start_date=0, end_date=0, buffer=0</code></p>
+                        <p>Arguments:</p>
+                        <ul>
+                            <li><code>file</code>: A string with the netCDF4 file name.</li>
+                            <li><code>shape</code>: A string with the name of a shapefile which represents the area of interest in the netCDF file.</li>
+                            <li><code>var_name</code>: A string with the name of the variable, which is inside the netCDF file, you want to read.</li>
+                            <li><code>freq</code>: A string with the data frequency. It can be: hourly, daily, monthly or yearly. It isn't the 
+                            time frequency of da data inside the netCDF file, but it is the time frequency you want. For example: If the netCDF data is 
+                            in a daily frequency and you put the <code>freq</code> equals to monthly it will return the data in monthly frequency.</li>
+                            <li><code>start_date</code>: A datetime in the format <code>%Y-%m-%d</code> which represents the initial date of data 
+                            you want as answer.</datagrid></aside></li>
+                            <li><code>end_date</code>: A datetime in the format <code>%Y-%m-%d</code> which represents the last date of data you want 
+                            as answer.</li>
+                            <li><code>buffer</code>: A float in dregrees. This variable will be used in case of the shapefile is too small and doesn't have
+                             grid points inside of it. If no grid point are found inside the shape on a first attempt this variable will be used to increase 
+                            the size of the shapefile until grid points are found within the shape.</li>
+                        </ul>
+                    </section>
+
                 </main>
             </div>
         </div>
