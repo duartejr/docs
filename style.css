@@ -1,11 +1,22 @@
-.sidebar {
-  background: rgb(5, 68, 104);
-  width: 225px;
-  margin: 0px;
+body {
+  position: relative;
+}
+ul.nav-pills {
+  top: 20px;
+  position: fixed;
+}
+div.col-sm-9 div {
+  font-size: 12px;
 }
 
-.content {
-  margin: 25px;
+.container{
+  margin-top: 0px;
+}
+
+.nav {
+  /* background: rgb(5, 68, 104); */
+  width: 220px;
+  margin-top: 0px;
 }
 
 .profile {
@@ -14,52 +25,37 @@
 }
 
 .profile h3{
-  color: #ffffff;
   margin: 10px 0 5px;
 }
 
 .profile p{
-  color: rgb(206, 240, 253);
+  color: rgb(15, 15, 15);
   font-size: 14px;
 }
 
-.sidebar header nav ul li {
-  list-style: none;
-}
-
-.sidebar header nav ul li a{
-  display: block;
-	padding: 5px 5px;
-	border-bottom: 1px solid #10558d;
-	color: rgb(241, 237, 237);
-	font-size: 14px;
-	position: relative;
-  text-decoration: none;
-}
-
-.sidebar header nav ul li a .icon{
-	color: #dee4ec;
-	width: 40px;
-	display: inline-block;
-}
-
-.sidebar header nav ul li a:hover,
-.sidebar header nav ul li a.active{
+.container .row .col-sm-3 .nav li a:hover,
+.container .row .col-sm-3 .nav li a.active{
   color: #0c7db1;
-  background:white;
+  background:rgb(83, 82, 82);
   border-right: 2px solid rgb(5, 68, 104);
 }
 
-.sidebar header nav ul li a:hover:before,
-.sidebar header nav ul li a.active:before{
+.container .row .col-sm-3 .nav li a:hover,
+.container .row .col-sm-3 .nav li a.active{
+  color: #0c7db1;
+  background:rgb(247, 245, 245);
+  border-right: 2px solid rgb(5, 68, 104);
+}
+
+.container .row .col-sm-3 .nav li a:hover:before,
+.container .row .col-sm-3 .nav li a.active:after{
   display: block;
 }
 
-
-.content p {
-  text-align: justify;
+.container .row .col-sm-3 .nav li {
+  list-style: none;
 }
 
-code { 
-  color: black;
+html {
+  scroll-behavior: smooth;
 }
