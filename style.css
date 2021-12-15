@@ -36,13 +36,6 @@ div.col-sm-9 div {
 .container .row .col-sm-3 .nav li a:hover,
 .container .row .col-sm-3 .nav li a.active{
   color: #0c7db1;
-  background:rgb(83, 82, 82);
-  border-right: 2px solid rgb(5, 68, 104);
-}
-
-.container .row .col-sm-3 .nav li a:hover,
-.container .row .col-sm-3 .nav li a.active{
-  color: #0c7db1;
   background:rgb(247, 245, 245);
   border-right: 2px solid rgb(5, 68, 104);
 }
