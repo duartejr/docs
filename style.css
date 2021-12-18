@@ -1,31 +1,37 @@
 body {
   position: relative;
+  margin: 0%;
 }
+
 ul.nav-pills {
-  top: 20px;
+  margin: 0%;
+  padding: 0%;
   position: fixed;
 }
+
 div.col-sm-9 div {
   font-size: 12px;
 }
 
 .container{
-  margin-top: 0px;
+  margin: 0px;
 }
 
 .nav {
-  /* background: rgb(5, 68, 104); */
-  width: 220px;
-  margin-top: 0px;
+  width: 200px;
+  margin-top: 0%;
+  padding: 0%;
+  background-color: #f9f2f4ff;
+  position: fixed;
+  height: 100%;
+}
+
+.col-sm-9 {
+  width: 700px;
 }
 
 .profile {
-  margin-bottom: 30px;
   text-align: center;
-}
-
-.profile h3{
-  margin: 10px 0 5px;
 }
 
 .profile p{
@@ -36,7 +42,7 @@ div.col-sm-9 div {
 .container .row .col-sm-3 .nav li a:hover,
 .container .row .col-sm-3 .nav li a.active{
   color: #0c7db1;
-  background:rgb(247, 245, 245);
+  /* background:rgb(247, 245, 245); */
   border-right: 2px solid rgb(5, 68, 104);
 }
 
