@@ -154,10 +154,25 @@
                 </p>
                 <p>Arguments:</p>
                 <ul>
-                    <p><code>shp</code>: A shapefile that limits the search area.</p>
-                    <p><code>lat</code>: An array with the latitude values of the dataset.</p>
-                    <p><code>lon</code>: An array with the longitude values of the dataset.</p>
-                    <p><code>buffer</code>: A float that represents the increase rate of the shape. The default unit is degrees.</p>
+                    <li><code>shp</code>: A shapefile that limits the search area.</li>
+                    <li><code>lat</code>: An array with the latitude values of the dataset.</li>
+                    <li><code>lon</code>: An array with the longitude values of the dataset.</li>
+                    <li><code>buffer</code>: A float that represents the increase rate of the shape. The default unit is degrees.</li>
+                </ul>
+                <p id="__read_var"><code>__read_var(file, var_name, plat, plon, ptime)</code></p>
+                <p>This function will read the data the storage in the netCDF file according with the restrictions passed as argument.</p>
+                <ul>
+                    <li><code>file</code>: A string with the netCDF file name.</li>
+                    <li><code>var_name</code>: The variable name to be read in the netCDF file</li>
+                    <li><code>plat</code>: An array with the latitude positions inside the interest area.</li>
+                    <li><code>plon</code>: An array with the longitude positions inside the interest area.</li>
+                    <li><code>ptime</code>: An array with the time positions of interest.</li>
+                </ul>
+                <p id='__dates'><code>__dates(time_units, times)</code></p>
+                <p>This function will transform the date indexes to the datetime format.</p>
+                <ul>
+                    <li><code>time_units</code>: A string specify the time units of the data storage in the netCDF.</li>
+                    <li><code>times</code>: A list with the time indexes storege in the netCDF.</li>
                 </ul>
             </section>
         </div>
