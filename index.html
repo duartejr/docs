@@ -38,6 +38,14 @@
                         <li><a href="#__in_poly"><code>__in_poly</code></a></li>
                         <li><a href="#__read_var"><code>__read_var</code></a></li>
                         <li><a href="#__dates"><code>__dates</code></a></li>
+                        <li><a href="#__dates_in"><code>__dates_in</code></a></li>
+                        <li><a href="#__get_lat_lon_time"><code>__get_lat_lon_time</code></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#plotmaps">Plotting maps</a>
+                    <ul>
+                        <li><a href="#imshow"><code>imshow</code></a></li>
                     </ul>
                 </li>
             </ul>
@@ -121,7 +129,7 @@
                     <li>geopandas</li>
                 </ul>
                 <p id="read_nc"><code>read_nc(file, shape=None, var_name='pre', freq='month', start_date=0, end_date=0, buffer=0)</code></p>
-                <p>Arguments:</p>
+                <h5>Arguments:</h5>
                 <ul>
                     <p><code>file</code>: A string with the netCDF4 file name.</p>
                     <p><code>shape</code>: A string with the name of a shapefile which represents the area of interest in the netCDF file.</p>
@@ -138,7 +146,7 @@
                     the size of the shapefile until grid points are found within the shape.</p>
                 </ul>
                 <p id="save_nc"><code>save_nc(var, lat, lon, dates, filename, time_units, var_name, var_units, var_long_name)</code></p>
-                <p>Arguments:</p>
+                <h5>Arguments:</h5>
                 <ul>
                     <p><code>var</code>: An array or matrix with the data you want to save in the new netCDF file.</p>
                     <p><code>lat</code>: An array with the latitudes values of each point in the <code>var</code> dataset.</p>
@@ -154,7 +162,7 @@
                 <p>This function verifies if the dataset has points inside a shape passed as argument. If a value of buffer is passed it will increase the size of
                     the shape using the buffer as a step size until it found points of the dataset inside the increased shape.
                 </p>
-                <p>Arguments:</p>
+                <h5>Arguments:</h3>
                 <ul>
                     <li><code>shp</code>: A shapefile that limits the search area.</li>
                     <li><code>lat</code>: An array with the latitude values of the dataset.</li>
@@ -163,7 +171,7 @@
                 </ul>
                 <p id="__read_var"><code>__read_var(file, var_name, plat, plon, ptime)</code></p>
                 <p>This function will read the data the storage in the netCDF file according with the restrictions passed as argument.</p>
-                <p>Arguments:</p>
+                <h5>Arguments:</h5>
                 <ul>
                     <li><code>file</code>: A string with the netCDF file name.</li>
                     <li><code>var_name</code>: The variable name to be read in the netCDF file</li>
@@ -173,11 +181,27 @@
                 </ul>
                 <p id='__dates'><code>__dates(time_units, times)</code></p>
                 <p>This function will transform the date indexes to the datetime format.</p>
-                <p>Arguments:</p>
+                <h5>Arguments:</h5>
                 <ul>
                     <li><code>time_units</code>: A string specify the time units of the data storage in the netCDF.</li>
                     <li><code>times</code>: A list with the time indexes storege in the netCDF.</li>
                 </ul>
+                <p id="__dates_in"><code>__dates_in(dates, start_date, end_date)</code></p>
+                <p>This function will select the dates of the netCDF that are between a certain interval.</p>
+                <h5>Arguments:</h5>
+                <ul>
+                    <li><code>dates</code>: An array with the dates storage in the netCDF.</li>
+                    <li><code>start_date</code>: A datetime that indicates the first date of the interval.</li>
+                    <li><code>end_date</code>: A datetime that indicates the last date of the interval</li>
+                </ul>
+                <p id="get_lat_lon_time"><code>__get_lat_lon_time(file, variables)</code></p>
+                <p>This function will get the values of latitude, longitude, and time storage in the netCDF file.</p>
+            </section>
+            <section id="plotmaps">
+                <h2>Plotting Maps</h2>
+                <p>In this section I will show some features to plot some kind of maps. The scrips are available in <a href="https://github.com/duartejr/pyutils/blob/master/plot_maps.py">here</a>.</p>
+                <h3 id="imshow">imshow</h3>
+
             </section>
         </div>
     </div>
